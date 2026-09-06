@@ -1,0 +1,16 @@
+# Ejecutable compilado
+subarreglo
+
+# Archivos generados por el compilador
+*.o
+*.out
+*.exe
+
+# Carpetas de editores
+.vscode/
+.idea/
+
+# Archivos del sistema
+.DS_Store
+
+*.pdf
