@@ -32,7 +32,6 @@ Las sumas se guardan en variables `long long` para evitar desbordamientos con ar
 
 - `main.cpp`: algoritmos, pruebas, mediciones y predicciones.
 - `Makefile`: instrucciones de compilación.
-- `README.md`: descripción y resultados del laboratorio.
 
 ## Compilación y ejecución
 
