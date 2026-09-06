@@ -1,5 +1,7 @@
 # Laboratorio de máximo subarreglo
 
+Nombre: Javier Alonzo Peñalva Humire
+
 ## Descripción
 
 El problema consiste en encontrar la suma máxima de un segmento contiguo dentro de un arreglo de enteros positivos y negativos.
