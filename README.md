@@ -1,6 +1,6 @@
 # Laboratorio de máximo subarreglo
 
-Nombre: Javier Alonzo Peñalva Humire
+__Nombre__: Javier Alonzo Peñalva Humire
 
 ## Descripción
 
