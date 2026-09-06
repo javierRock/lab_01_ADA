@@ -189,9 +189,24 @@ int main()
     int ultimo_n = 0;
 
     cout.setf(ios::fixed);
+    cout.setf(ios::right, ios::adjustfield);
     cout.precision(9);
 
-    cout << "n\tCubica(s)\tRazon\tCuadratica(s)\tRazon\tLineal(s)\tRazon\n";
+    cout.width(6);
+    cout << "n" << " | ";
+    cout.width(14);
+    cout << "Cubica(s)" << " | ";
+    cout.width(8);
+    cout << "Razon" << " | ";
+    cout.width(16);
+    cout << "Cuadratica(s)" << " | ";
+    cout.width(8);
+    cout << "Razon" << " | ";
+    cout.width(14);
+    cout << "Lineal(s)" << " | ";
+    cout.width(8);
+    cout << "Razon" << "\n";
+    cout << "--------------------------------------------------------------------------------------------\n";
 
     for (int x = 0; x < cantidad; x++) {
         int n = tamanos[x];
@@ -205,23 +220,42 @@ int main()
         double tq = tiempo_cuadratica(l, n);
         double tl = tiempo_lineal(l, n);
 
-        cout << n << "\t" << tc << "\t";
+        cout.precision(9);
+        cout.width(6);
+        cout << n << " | ";
+        cout.width(14);
+        cout << tc << " | ";
+
+        cout.precision(2);
+        cout.width(8);
 
         if (x == 0) {
-            cout << "-\t";
+            cout << "-";
         } else {
-            cout << tc / anterior_cubica << "\t";
+            cout << tc / anterior_cubica;
         }
 
-        cout << tq << "\t";
+        cout << " | ";
+        cout.precision(9);
+        cout.width(16);
+        cout << tq << " | ";
+
+        cout.precision(2);
+        cout.width(8);
 
         if (x == 0) {
-            cout << "-\t";
+            cout << "-";
         } else {
-            cout << tq / anterior_cuadratica << "\t";
+            cout << tq / anterior_cuadratica;
         }
 
-        cout << tl << "\t";
+        cout << " | ";
+        cout.precision(9);
+        cout.width(14);
+        cout << tl << " | ";
+
+        cout.precision(2);
+        cout.width(8);
 
         if (x == 0 || anterior_lineal == 0.0) {
             cout << "-\n";
